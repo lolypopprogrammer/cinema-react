@@ -1,13 +1,13 @@
 import React from 'react';
 
 interface IProps {
-  title: string
+  text: string
 }
 
 const Header = (props: IProps) => {
   return (
     <header className="App-header">
-      <h2>{props.title}</h2>
+      <h2>{props.text}</h2>
     </header>
   );
 }
