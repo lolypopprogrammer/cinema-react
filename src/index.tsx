@@ -5,11 +5,18 @@ import reportWebVitals from './reportWebVitals';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import NotFound from "./pages/404/NotFound";
+import OOP from "./pages/oop/OOP";
+import LayoutTemplate from "./pages/layoutTemplate/LayoutTemplate";
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
+      {/*
+        Параметр exact отключает частичное сопостовление маршрута и гарантирует, что вернет маршрут,
+        только при полном сопостовление URL
+      */}
       <Route exact path="/" component={App} />
+      <LayoutTemplate title={'OOP'} path="/oop" component={OOP} />
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>,

@@ -14,6 +14,12 @@ class NotFound extends React.Component<any, any> {
             </Link>
           </div>
           <div className="white stick"></div>
+          <div className="white right" style={{left: '545px', top: '400px'}}>
+            <Link to={'/'}>
+              404
+            </Link>
+          </div>
+          <div className="white stick" style={{left: '615px', top: '485px', height: 'calc(100% - 485px)'}}></div>
         </div>
       </div>
     );

@@ -95,8 +95,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header text="HOOKED" />
-      <Search search={search} />
+
       {loading && !errorMessage ? (
         <div className="loader">
           <div className="circle circle-1"></div>
@@ -109,6 +108,8 @@ const App = () => {
         <div className="errorMessage">{errorMessage}</div>
       ) : (
         <>
+          <Header text="HOOKED" />
+          <Search search={search} />
           <p className="App-intro">Некоторые популярные фильмы:</p>
           <div className="movies">
             {movies?.map((movie: IMovie, index: number) => (
